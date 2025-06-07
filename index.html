@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora Científica</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="calculator">
+        <div class="display">
+            <div class="previous-operand"></div>
+            <div class="current-operand">0</div>
+        </div>
+        <div class="buttons">
+            <!-- Primera fila -->
+            <button class="function" onclick="clearMemory()">MC</button>
+            <button class="function" onclick="memoryRecall()">MR</button>
+            <button class="function" onclick="memoryAdd()">M+</button>
+            <button class="function" onclick="memorySubtract()">M-</button>
+            <button class="operator" onclick="clearAll()">C</button>
+
+            <!-- Segunda fila -->
+            <button class="function" onclick="calculate('sin')">sin</button>
+            <button class="function" onclick="calculate('cos')">cos</button>
+            <button class="function" onclick="calculate('tan')">tan</button>
+            <button class="operator" onclick="addToExpression('(')">(</button>
+            <button class="operator" onclick="addToExpression(')')">)</button>
+
+            <!-- Tercera fila -->
+            <button class="function" onclick="calculate('sqrt')">√</button>
+            <button class="function" onclick="calculate('pow')">x²</button>
+            <button class="function" onclick="calculate('exp')">EXP</button>
+            <button class="function" onclick="calculate('log')">log</button>
+            <button class="function" onclick="calculate('ln')">ln</button>
+
+            <!-- Cuarta fila -->
+            <button onclick="addToExpression('7')">7</button>
+            <button onclick="addToExpression('8')">8</button>
+            <button onclick="addToExpression('9')">9</button>
+            <button class="operator" onclick="addToExpression('/')">/</button>
+            <button class="function" onclick="calculate('percent')">%</button>
+
+            <!-- Quinta fila -->
+            <button onclick="addToExpression('4')">4</button>
+            <button onclick="addToExpression('5')">5</button>
+            <button onclick="addToExpression('6')">6</button>
+            <button class="operator" onclick="addToExpression('*')">×</button>
+            <button class="function" onclick="calculate('1/x')">1/x</button>
+
+            <!-- Sexta fila -->
+            <button onclick="addToExpression('1')">1</button>
+            <button onclick="addToExpression('2')">2</button>
+            <button onclick="addToExpression('3')">3</button>
+            <button class="operator" onclick="addToExpression('-')">-</button>
+            <button class="operator" onclick="calculate('pi')">π</button>
+
+            <!-- Séptima fila -->
+            <button onclick="addToExpression('0')">0</button>
+            <button onclick="addToExpression('.')">.</button>
+            <button class="operator" onclick="calculate('=')">=</button>
+            <button class="operator" onclick="addToExpression('+')">+</button>
+            <button class="operator" onclick="calculate('e')">e</button>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html> 
