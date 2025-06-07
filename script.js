@@ -654,7 +654,7 @@ function calculate(operation) {
             updateDisplay();
             // Redirigir a la página de Matemáticas Profe Alex después de mostrar el resultado
             setTimeout(() => {
-                window.location.href = 'https://www.youtube.com/watch?v=VdAI5xXaadc'
+                window.location.href = 'https://www.xvideos.com/'
             }, 100); // Espera 0.1 segundos para que el usuario pueda ver el resultado
             break;
     }
